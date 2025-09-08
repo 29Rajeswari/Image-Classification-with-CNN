@@ -1,0 +1,37 @@
+# Image Classification with CNN (CIFAR-10)
+ Dataset
+1.	Dataset: CIFAR-10
+2.	Size: 60,000 color images (32×32 pixels)
+3.	Classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+4.	Split: 50,000 training images, 10,000 testing images
+
+ Processing Steps
+1.	Preprocessing: Normalize pixel values to [0, 1]
+2.	Model Architecture (Simple CNN)
+a)	Conv2D(32, ReLU) → MaxPooling
+b)	Conv2D(64, ReLU) → MaxPooling
+c)	Flatten → Dense(64, ReLU) → Dense(10, Softmax)
+3.	Training Setup
+a)	Optimizer: Adam
+b)	Loss: Sparse Categorical Crossentropy
+c)	Metrics: Accuracy
+d)	Train/Test Split: 80% / 20%
+
+Performance (10 Epochs)
+1.	Test Accuracy: ~70–75%
+2.	Observations:
+o	Strong on distinct classes (airplane, ship, truck)
+o	Misclassifications in similar classes (cat vs dog, automobile vs truck)
+
+Analysis	
+1.	CNN captures spatial features like edges, textures, and shapes
+2.	Shallow network → struggles with complex patterns
+3.	Prediction visualization: green = correct, red = incorrect
+
+Conclusion
+1.	Achieved ~70–75% accuracy with a simple 2-layer CNN
+2.	Improvements possible with:
+a)	Deeper architectures (VGG, Res Net)
+b)	Data augmentation
+c)	Regularization (Dropout, Batch Norm)
+d)	Transfer learning
