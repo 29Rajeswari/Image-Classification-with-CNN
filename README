@@ -5,17 +5,19 @@ A Convolutional Neural Network (CNN) built with TensorFlow/Keras to classify ima
 ---
 
 ## 📸 Sample Predictions
-![Sample Predictions](https://github.com/29Rajeswari/Image-Classification-with-CNN/blob/main/Sample%20Predictions.png)
 
+> Green = Correct Prediction &nbsp;|&nbsp; Red = Wrong Prediction
+
+![Sample Predictions](https://raw.githubusercontent.com/29Rajeswari/Image-Classification-with-CNN/main/Sample%20Predictions.png)
 ---
 
 ## 🗂️ Project Structure
 
 ```
-image_classification_with_CNN/
+Image-Classification-with-CNN/
 │
 ├── image_classification_cnn.ipynb   # Main Colab notebook
-├── prediction_output.png            # Sample prediction screenshot
+├── Sample Predictions.png           # Sample prediction screenshot
 └── README.md
 ```
 
@@ -110,8 +112,8 @@ Dense(10, Softmax)  →  Output (10 classes)
 
 ```bash
 # Clone the repo
-git clone https://github.com/29Rajeswari/image_classification_with_CNN.git
-cd image_classification_with_CNN
+git clone https://github.com/29Rajeswari/Image-Classification-with-CNN.git
+cd Image-Classification-with-CNN
 
 # Install dependencies
 pip install tensorflow matplotlib numpy
